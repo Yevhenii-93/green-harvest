@@ -1,68 +1,71 @@
 /* По умолчанию модальное окно скрыто */
-.backdrop {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+.backdrop  {
     justify-content: center;
-    align-items: center;
-   
   }
   
   /* Открытое модальное окно */
   .backdrop.is-open {
     display: flex;
-    
   }
+  @media screen and (min-width: 768px) {
+    .backdrop.is-open  {
+      justify-content: flex-end
+
+  }
+    }
   
   .modal {
     background-color: #4a623a;
     padding: 20px;
-    border-radius: 8px;
     text-align: center;
+    width:375px;
+    height: 812px;
   }
-  
+
+  .form-icon {
+    fill: #FBFBFB;
+
+  }
   .close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+   margin-left: 323px;
+   margin-top: 20px;
     background: none;
     border: none;
-    font-size: 24px;
-    color: white;
     cursor: pointer;
   }
   
   .modal-menu {
     list-style: none;
     padding: 0;
+    margin-top: 244px;
+    margin-bottom: 232px;
+  }
+
+  .modal-li {
+    margin-bottom: 24px;
   }
   
   .modal-link {
-    margin: 10px 0;
-    padding: 10px 20px;
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #2e2f42;
-    cursor: pointer;
+background-color:#FBFBFB ;
+border: none;
+border-radius: 12px;
+font-size: 16px;
+color: #2e2f42;
+cursor: pointer;
+padding: 12px 16px 12px 16px;
   }
-  
+ 
   .modal-link:hover {
     background-color: #f0f0f0;
   }
   
   .shop-now {
-    margin-top: 20px;
-    padding: 10px 30px;
-    background-color: #7d1a31;
-    color: white;
+   
+    padding: 16px 41px 16px 41px;
+    background-color: #7A3145;
+    color: #FBFBFB;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
   }
   
