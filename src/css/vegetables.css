@@ -52,8 +52,8 @@
   color: #d4bfc4;
 }
 
-.vegetables-text {
-}
+/* .vegetables-text {
+} */
 @media only screen and (min-width: 768px) {
   .vegetables-text {
     font-size: 16px;
