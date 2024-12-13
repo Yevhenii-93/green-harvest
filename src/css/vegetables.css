@@ -1,24 +1,24 @@
 .vegetables {
-  padding: 80px 20px;
+  padding: 80px 0;
   background-color: #7a3145;
 }
 @media only screen and (min-width: 768px) {
   .vegetables {
-    padding: 100px 32px;
+    padding: 100px 0;
   }
 }
 @media only screen and (min-width: 1280px) {
   .vegetables {
-    padding: 100px;
+    padding: 100px 0;
   }
 }
 .vegetables-container {
-  padding: 0;
+  /* padding: 0; */
   margin: 0;
 }
 
 .vegetables-wrap {
-  max-width: 320px;
+  max-width: 335px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -26,7 +26,6 @@
   gap: 20px;
   margin-bottom: 40px;
 }
-
 @media only screen and (min-width: 768px) {
   .vegetables-wrap {
     max-width: 626px;
@@ -34,7 +33,11 @@
     margin-bottom: 52px;
   }
 }
+
 .vegetables-title {
+  max-width: 335px;
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 48px;
   line-height: 1.08;
@@ -43,6 +46,9 @@
 }
 @media only screen and (min-width: 768px) {
   .vegetables-title {
+    max-width: 508px;
+    margin-bottom: 24px;
+
     font-size: 64px;
     line-height: 1;
   }
@@ -52,10 +58,15 @@
   color: #d4bfc4;
 }
 
-/* .vegetables-text {
-} */
+.vegetables-text {
+  max-width: 335px;
+  margin-bottom: 40px;
+}
 @media only screen and (min-width: 768px) {
   .vegetables-text {
+    max-width: 626px;
+    margin-bottom: 52px;
+
     font-size: 16px;
     line-height: 1.25;
   }
