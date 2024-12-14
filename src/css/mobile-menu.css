@@ -9,12 +9,18 @@
   }
   @media screen and (min-width: 768px) {
     .backdrop.is-open  {
-      justify-content: flex-end
-
+      justify-content: flex-end;
+      
   }
     }
   
-  .modal {
+    @media screen and (min-width: 1280px) {
+      .backdrop.is-open  {
+        visibility: hidden;
+    }
+      }
+
+  .modal { 
     background-color: #4a623a;
     padding: 20px;
     text-align: center;
@@ -46,13 +52,13 @@
   }
   
   .modal-link {
-background-color:#FBFBFB ;
-border: none;
-border-radius: 12px;
-font-size: 16px;
-color: #2e2f42;
-cursor: pointer;
-padding: 12px 16px 12px 16px;
+    background-color:#FBFBFB ;
+   border: none;
+   border-radius: 12px;
+   font-size: 16px;
+   color: #2e2f42;
+   cursor: pointer;
+   padding: 12px 16px 12px 16px;
   }
  
   .modal-link:hover {
