@@ -1,11 +1,13 @@
 /* По умолчанию модальное окно скрыто */
 .backdrop  {
-    justify-content: center;
+    
+    visibility: hidden;
   }
   
   /* Открытое модальное окно */
   .backdrop.is-open {
     display: flex;
+   visibility: visible;
   }
   @media screen and (min-width: 768px) {
     .backdrop.is-open  {
@@ -24,13 +26,21 @@
     background-color: #4a623a;
     padding: 20px;
     text-align: center;
-    width:375px;
-    height: 812px;
+    width: 100%;
+    height: 100%;
   }
+  @media screen and (min-width: 768px) {
+    .modal   {
+      width: 351PX;
+      height: 1020PX;
+  }
+    }
 
   .form-icon {
     stroke: #fbfbfb;
     position: absolute;
+    width: 16px;
+    height: 16px;
   }
   
   .close-modal {
@@ -38,8 +48,7 @@
    margin-top: 20px;
     background: none;
     border: none;
-    cursor: pointer;
-    display: flex;
+    cursor: pointer; 
   }
   
   .modal-menu {
