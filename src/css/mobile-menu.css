@@ -29,15 +29,17 @@
   }
 
   .form-icon {
-    fill: #FBFBFB;
-
+    stroke: #fbfbfb;
+    position: absolute;
   }
+  
   .close-modal {
-   margin-left: 323px;
+   margin-left: 303px;
    margin-top: 20px;
     background: none;
     border: none;
     cursor: pointer;
+    display: flex;
   }
   
   .modal-menu {
@@ -52,19 +54,28 @@
   }
   
   .modal-link {
-    background-color:#FBFBFB ;
-   border: none;
+  background-color:#4a623a ;
    border-radius: 12px;
    font-size: 16px;
-   color: #2e2f42;
+   color: #FBFBFB ;
    cursor: pointer;
    padding: 12px 16px 12px 16px;
+   border-color: #FBFBFB;
+   border: 1px solid #fbfbfb;
   }
  
   .modal-link:hover {
-    background-color: #f0f0f0;
+    color: #7A3145;
+    background-color: #D4BFC4;
+    border: 1px solid #D4BFC4;
   }
   
+  .modal-link:active {
+    color: #7A3145;
+    border: 1px solid #fbfbfb;
+    background-color: #fbfbfb;
+  }
+
   .shop-now {
    
     padding: 16px 41px 16px 41px;
