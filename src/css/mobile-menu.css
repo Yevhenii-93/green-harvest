@@ -66,10 +66,17 @@
  
   .modal-link:hover {
     color: #7A3145;
-    background-color: #D4BFC4;
-    border: 1px solid #D4BFC4;
+    border: 1px solid #fbfbfb;
+    background-color: #fbfbfb;
   }
   
+  @media screen and (min-width:1280px){
+    .modal-link:hover {
+      background-color: #D4BFC4;
+    border: 1px solid #D4BFC4;
+    }
+  }
+
   .modal-link:active {
     color: #7A3145;
     border: 1px solid #fbfbfb;
