@@ -13,7 +13,6 @@
   }
 }
 .vegetables-container {
-  /* padding: 0; */
   margin: 0;
 }
 
@@ -137,10 +136,11 @@
 }
 
 .vegetables-img {
+  width: 280px;
+  height: 240px;
 }
 @media only screen and (min-width: 1280px) {
   .vegetables-img {
-    width: 280px;
     height: 244px;
   }
 }
