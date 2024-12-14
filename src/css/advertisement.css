@@ -24,18 +24,25 @@
   text-transform: uppercase;
   color: #141414;
   position: absolute;
+  max-width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
   .advertisement-text {
     font-size: 64px;
     line-height: 1;
+    max-width: 704px;
+    margin-top: 20px;
+    margin-bottom: 12px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .advertisement-text {
     font-size: 76px;
+    margin-top: 4px;
+    margin-left: 16px;
+    max-width: 1054px;
   }
 }
 
@@ -44,13 +51,26 @@
 }
 
 .border {
-  display: inline-block;
-  width: 808px;
-  height: 84px;
+  width: 335px;
+  height: 102px;
   background-color: #576f35;
   border-radius: 12px;
+  position: absolute;
+}
+@media only screen and (min-width: 768px) {
+  .border {
+    width: 675px;
+    height: 86px;
+  }
 }
 
-.advertisement .container {
+@media only screen and (min-width: 1280px) {
+  .border {
+    width: 808px;
+    height: 84px;
+  }
+}
+
+.advertisement {
   position: relative;
 }
