@@ -12,9 +12,6 @@
     padding: 100px 0;
   }
 }
-.vegetables-container {
-  margin: 0;
-}
 
 .vegetables-wrap {
   max-width: 335px;
@@ -72,7 +69,6 @@
 }
 .vegetables-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -85,14 +81,12 @@
   border-radius: 40px;
   padding: 32px 24px;
   width: 335px;
-  height: 376px;
   background-color: #fbfbfb;
 }
 @media only screen and (min-width: 768px) {
   .vegetables-item {
     padding: 32px 30px;
     width: calc((100% - 24px) / 2);
-    height: 380px;
   }
 }
 @media only screen and (min-width: 1280px) {
