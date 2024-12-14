@@ -1,0 +1,56 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advertisement {
+  padding: 100px 0;
+}
+
+.advertisement-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+  .advertisement-text {
+    font-size: 64px;
+    line-height: 1;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .advertisement-text {
+    font-size: 76px;
+  }
+}
+
+.advertisement-txt {
+  color: #fbfbfb;
+}
+
+.border {
+  display: inline-block;
+  width: 808px;
+  height: 84px;
+  background-color: #576f35;
+  border-radius: 12px;
+}
+
+.advertisement .container {
+  position: relative;
+}
