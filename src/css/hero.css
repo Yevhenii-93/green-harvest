@@ -1,95 +1,70 @@
 .hero-section {
     display: flex;
     justify-content: center;
-    width: 1280px
-}
-
-.hero {
-    font-size: 76px;
-    font-weight: 600;
-    line-height: 76px;
-    letter-spacing: -0.1em;
-    text-transform: uppercase;
-    color: #FBFBFB;
-    padding-bottom: 128px;
-}
-
-.text-box {
-    width: 504px;
-    margin: 232px 36px 52px 100px;
+    width: 375px;
+    background-color: #576F35;
 }
 
 .div-hero {
     display: flex;
-    justify-content: center;
-    width: 1280px
+    flex-direction: column;
+    width: 375px;
+}
+
+.text-box {
+    width: 335px;
+    margin: 100px 20px 40px 20px;
+}
+
+.hero {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 52px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: -0.01em;
 }
 
 .hero-image {
-    background-image: url(../img/veg-1x/veg-desc.jpg);
-    width: 100%;
-    height: 100%;
+    background-image: url(../img/veg-1x/veg-phon.jpg);
+    width: 375px;
+    height: 372px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-@media(max-width: 767px) {
+@media only screen and (min-width:768px) and (max-width:1279px) {
     .hero-image {
-        width: 375px;
-        height: 372px;
-        background-image: url(../img/veg-1x/veg-phon.jpg);
+        background-image: url(../img/veg-1x/veg-tabl.jpg);
+        width: 768px;
+        height: 536px;
     }
 
     .hero-section {
-        width: 375px;
+        width: 768px;
     }
 
     .div-hero {
-        width: 375px;
-        display: flex;
-        flex-direction: column;
+        width: 768px;
     }
 
-    .text-box {
-        width: 335px;
-        margin: 100px 20px 40px 20px;
-    }
-
-    .hero {
-        padding-bottom: 24px;
-        width: 335px;
-        font-size: 52px;
-        line-height: 52px;
-        letter-spacing: -0.015em;
-    }
-}
-
-@media (min-width:768px) and (max-width:1158px) {
     .hero-image {
         width: 768px;
-        height: 536px;
-        background-image: url(../img/veg-1x/veg-tabl.jpg);
-    }
-
-    .div-hero {
-        display: flex;
-        flex-direction: column;
-        width: 768px;
-    }
-
-    .img-veg {
-        width: 100%;
     }
 
     .text-box {
-        margin: 120px 32px 52px 32px;
         width: 704px;
+        height: 312px;
+        margin: 120px 32px 52px 32px;
     }
 
     .hero {
         padding-bottom: 24px;
         width: 704px;
+        font-size: 76px;
+        font-weight: 600;
+        line-height: 76px;
     }
 
     .text-hero {
@@ -97,35 +72,64 @@
     }
 }
 
-@media (min-width: 1158px) {
+@media only screen and (min-width:1280px) {
     .hero-image {
-        width: 640px;
         background-image: url(../img/veg-1x/veg-desc.jpg);
+        width: 640px;
+        height: 796px;
+    }
+
+    .hero-section {
+        width: 1280px;
+    }
+
+    .div-hero {
+        width: 1280px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-box {
+        width: 504px;
+        height: 564px;
+        margin: 232px 36px 0 100px;
+    }
+
+    .hero {
+        font-size: 76px;
+        font-weight: 600;
+        line-height: 76px;
+        letter-spacing: -0.01em;
+        padding-bottom: 128px;
+    }
+
+    .text-hero {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
     }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-    .hero-image {
-        background-size: cover;
-        background-position: center;
-    }
 
-    @media (max-width: 768px) {
+
+    @media only screen and (max-width: 768px) {
         .hero-image {
-            background-image: url(/img/veg-2x/veg-phon@2x.jpg);
+            background-image: url(../img/veg-2x/veg-phon@2x.jpg);
         }
     }
 
-    @media (min-width: 769px) and (max-width: 1279px) {
+    @media only screen and (min-width: 768px) and (max-width: 1280px) {
         .hero-image {
-            background-image: url(/img/veg-2x/veg-tabl@2x.jpg);
+            background-image: url(../img/veg-2x/veg-tabl@2x.jpg);
         }
     }
 
-    @media (min-width: 12px) {
+    @media only screen and (min-width: 1281px) {
         .hero-image {
-            background-image: url(/img/veg-2x/veg-desc@2x.jpg);
+            background-image: url(../img/veg-2x/veg-desc@2x.jpg);
         }
     }
 }
