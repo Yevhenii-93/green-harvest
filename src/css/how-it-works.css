@@ -55,12 +55,6 @@
   }
 }
 
-.work-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .work-right {
   width: 375px;
   padding: 80px 20px;
@@ -82,7 +76,6 @@
 }
 
 .title-right {
-  font-family: Inter Tight;
   font-size: 28px;
   font-weight: 600;
   line-height: 28px;
@@ -91,7 +84,6 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
-  color: #fbfbfb;
   margin-bottom: 20px;
 }
 
@@ -108,20 +100,15 @@
 }
 
 .order-text {
-  font-family: Inter Tight;
-  font-size: 14px;
-  font-weight: 500;
   line-height: 20px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #fbfbfb;
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .order-text {
-    font-size: 16px;
     margin-bottom: 52px;
   }
 }
@@ -135,7 +122,13 @@
 .list-order {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-order {
+    gap: 24px;
+  }
 }
 
 .parent {
@@ -168,7 +161,6 @@
 
 .list-item::before {
   content: counter(item) ' ';
-  color: #fbfbfb;
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
@@ -188,8 +180,6 @@
 }
 
 .text-item {
-  font-size: 14px;
-  font-weight: 500;
   line-height: 20px;
   text-align: left;
   text-underline-position: from-font;
@@ -197,46 +187,7 @@
   color: #858585;
 }
 
-@media screen and (min-width: 768px) {
-  .text-item {
-    font-size: 16px;
-  }
-}
-
 .item-span {
   font-weight: 700;
   color: #141414;
-}
-
-.order-section {
-  padding: 0 20px;
-  background-color: rgba(87, 111, 53, 1);
-}
-
-.order-title {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 52px;
-  letter-spacing: -0.015em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  color: #fbfbfb;
-  margin-bottom: 20px;
-}
-
-.order-title-span {
-  color: #d4bfc4;
-}
-
-.order-text {
-  font-family: Inter Tight;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #fbfbfb;
 }
