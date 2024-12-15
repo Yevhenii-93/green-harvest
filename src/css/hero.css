@@ -1,18 +1,18 @@
 .hero-section {
     display: flex;
     justify-content: center;
-    width: 375px;
+    max-width: 375px;
     background-color: #576F35;
 }
 
 .div-hero {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    max-width: 375px;
 }
 
 .text-box {
-    width: 335px;
+    max-width: 335px;
     margin: 100px 20px 40px 20px;
 }
 
@@ -42,33 +42,33 @@
     }
 
     .hero-section {
-        width: 768px;
+        max-width: 768px;
     }
 
     .div-hero {
-        width: 768px;
+        max-width: 768px;
     }
 
     .hero-image {
-        width: 768px;
+        max-width: 768px;
     }
 
     .text-box {
-        width: 704px;
+        max-width: 704px;
         height: 312px;
         margin: 120px 32px 52px 32px;
     }
 
     .hero {
         padding-bottom: 24px;
-        width: 704px;
+        max-width: 704px;
         font-size: 76px;
         font-weight: 600;
         line-height: 76px;
     }
 
     .text-hero {
-        width: 603px;
+        max-width: 603px;
     }
 }
 
@@ -80,17 +80,18 @@
     }
 
     .hero-section {
-        width: 1280px;
+        max-width: 1280px;
+        padding: 0;
     }
 
     .div-hero {
-        width: 1280px;
+        max-width: 1280px;
         display: flex;
         flex-direction: row;
     }
 
     .text-box {
-        width: 504px;
+        max-width: 504px;
         height: 564px;
         margin: 232px 36px 0 100px;
     }
@@ -115,19 +116,19 @@
 (min-resolution: 192dpi) {
 
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
         .hero-image {
             background-image: url(../img/veg-2x/veg-phon@2x.jpg);
         }
     }
 
-    @media only screen and (min-width: 768px) and (max-width: 1280px) {
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
         .hero-image {
             background-image: url(../img/veg-2x/veg-tabl@2x.jpg);
         }
     }
 
-    @media only screen and (min-width: 1281px) {
+    @media only screen and (min-width: 1280px) {
         .hero-image {
             background-image: url(../img/veg-2x/veg-desc@2x.jpg);
         }
