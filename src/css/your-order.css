@@ -69,6 +69,7 @@
 /*wrapper*/
 .order-wrapper {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 }
