@@ -59,6 +59,7 @@
 
 @media screen and (min-width: 1280px) {
   .title-reviews {
+    max-width: 751px;
     margin-bottom: 24px;
   }
 
@@ -78,7 +79,8 @@
   justify-content: center;
 }
 
-.reviews-list * {
+.reviews-item {
+  overflow: hidden;
   width: 100%;
   animation: slide-left 15s linear infinite;
 }
@@ -112,12 +114,35 @@
   align-items: center;
   justify-content: center;
   width: 335px;
+  overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .reviews-list {
+    width: 1068px;
+    height: 248px;
+    overflow: hidden;
+    gap: 24px;
+  }
+  .reviews-item {
+    width: 340px;
+    padding: 20px;
+  }
+}
 @media screen and (min-width: 1280px) {
-  .reviews-list * {
+  .reviews-list {
+    width: 1080px;
+  }
+
+  .reviews-item {
+    width: 344px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .reviews-list {
+    overflow: hidden;
     width: 100%;
-    animation: slide-left 0 linear infinite;
+    animation: none;
   }
   .reviews-item {
     padding: 20px;
@@ -129,6 +154,7 @@
   height: 56px;
   border-radius: 100%;
   opacity: 0px;
+  margin-bottom: 24px;
 }
 
 .reviewer {
@@ -141,7 +167,6 @@
   margin-bottom: 8px;
 }
 .reviews-text {
-  font-family: Inter Tight;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -150,4 +175,10 @@
   width: 288px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .reviews-text {
+    font-size: 16px;
+  }
+}
+
 /* #endregion */
