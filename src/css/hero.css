@@ -21,9 +21,10 @@
     font-weight: 600;
     line-height: 52px;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     letter-spacing: -0.01em;
 }
+
 
 .hero-image {
     background-image: url(../img/veg-1x/veg-phon.jpg);
@@ -32,7 +33,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: block;
 }
+
 
 @media only screen and (min-width:768px) and (max-width:1279px) {
     .hero-image {
@@ -60,7 +63,7 @@
     }
 
     .hero {
-        padding-bottom: 24px;
+        margin-bottom: 24px;
         max-width: 704px;
         font-size: 76px;
         font-weight: 600;
@@ -101,13 +104,14 @@
         font-weight: 600;
         line-height: 76px;
         letter-spacing: -0.01em;
-        padding-bottom: 128px;
+        margin-bottom: 128px;
     }
 
     .text-hero {
         font-size: 16px;
         font-weight: 500;
         line-height: 20px;
+        max-width: 471px;
     }
 }
 
