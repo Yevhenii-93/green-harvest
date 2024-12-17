@@ -1,27 +1,32 @@
-<header class="page-header">
-  <nav class="navbar">
-    <div class="container">
-      <a href="#" class="navbar-logo">
-        <svg class="logo" width="168" height="16">
-          <use href="../img/sprite.svg#icon-logo"></use>
+<header class="header">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a class="header-logo-link" href="./index.html">
+        <svg class="header-logo-svg">
+          <use href="/img/sprite.svg#icon-logo"></use>
         </svg>
       </a>
-
-      <div class="navbar-wrap">
-        <ul class="navbar-menu">
-          <li class="menu-item">
-            <a href="how-it-works.html">How It Works</a>
-          </li>
-          <li class="menu-item"><a href="vegetables.html">Vegetables</a></li>
-          <li class="menu-item"><a href="reviews.html">Reviews</a></li>
-        </ul>
-        <a href="#" class="shop-btn">SHOP NOW</a>
-      </div>
-      <button class="menu-btn" type="button" data-menu-open>
-        <svg class="menu-icon" width="24" height="24">
-          <use href="../img/sprite.svg#icon-icon-menu"></use>
-        </svg>
-      </button>
-    </div>
-  </nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#how_it_works">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#vegetables">Vegetables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header-btn" type="button">SHOP NOW</button>
+    <button
+      class="burger-btn js-open-modal"
+      type="button"
+      aria-label="Open burger menu"
+    >
+      <svg class="burger-icon" width="21" height="16">
+        <use href="/img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
 </header>
