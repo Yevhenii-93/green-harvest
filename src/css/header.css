@@ -84,7 +84,7 @@
   }
 
   .header-logo-link {
-    margin-right: 366px;
+    margin-right: 366px auto;
     padding: 16px 0;
   }
   .header-nav {
