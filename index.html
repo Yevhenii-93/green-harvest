@@ -47,7 +47,7 @@
     </nav>
     <button class="header-btn" type="button">SHOP NOW</button>
     <button
-      class="burger-btn js-open-modal"
+      class="burger-btn js-open-menu"
       type="button"
       aria-label="Open burger menu"
     >
@@ -534,10 +534,10 @@
 </footer>
 
 
-    <section class="menu js-modal">
+    <section class="menu js-menu-container">
   <div class="menu-container">
     <h2 class="visually-hidden">menu</h2>
-    <button class="btn-close-menu js-close-modal" type="button">
+    <button class="btn-close-menu js-close-menu" type="button">
       <svg class="icon-close-menu" width="16" height="16">
         <use href="/green-harvest/assets/sprite-BPnRvM6P.svg#icon-line-1"></use>
       </svg>
@@ -548,19 +548,17 @@
     <nav class="mobile-nav">
       <ul class="mobile-list">
         <li class="mobile-item">
-          <a class="mob-nav-link link-works js-close-modal" href="#how-it-works"
+          <a class="mob-nav-link link-works" href="#how-it-works"
             >How It Works</a
           >
         </li>
         <li class="mobile-item">
-          <a
-            class="mob-nav-link link-vegetables js-close-modal"
-            href="#vegetables"
+          <a class="mob-nav-link link-vegetables" href="#vegetables"
             >Vegetables</a
           >
         </li>
         <li class="mobile-item link-reviews">
-          <a class="mob-nav-link js-close-modal" href="#reviews">Reviews</a>
+          <a class="mob-nav-link" href="#reviews">Reviews</a>
         </li>
       </ul>
     </nav>
@@ -568,6 +566,13 @@
   </div>
 </section>
 
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 
   </body>
 </html>
