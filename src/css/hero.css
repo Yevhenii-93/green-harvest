@@ -18,6 +18,16 @@
     margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 375px) {
+    .hero {
+        font-size: 43px;
+    }
+
+    .text-hero {
+        font-size: 11px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .hero-section {
         background-image: url(../img/veg-1x//veg-tabl.jpg);
