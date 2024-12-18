@@ -132,7 +132,7 @@
 
     45%,
     70% {
-      transform: translateX(-100%);
+      transform: translateX(-364px);
     }
 
     95%,
@@ -156,7 +156,6 @@
   width: 56px;
   height: 56px;
   border-radius: 100%;
-  opacity: 0px;
   margin-bottom: 24px;
 }
 
