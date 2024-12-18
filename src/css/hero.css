@@ -1,22 +1,24 @@
 .hero-section {
-    display: flex;
-    justify-content: center;
-    max-width: 375px;
     background-color: #576F35;
+
+
 }
 
 .div-hero {
-    display: flex;
-    flex-direction: column;
-    max-width: 375px;
+    background-image: url(../img/veg-1x/veg-phon.jpg);
+    background-size: 375px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
 }
 
 .text-box {
     max-width: 335px;
-    margin: 100px 20px 40px 20px;
+    padding-top: 100px;
+    padding-bottom: 412px;
 }
 
 .hero {
+    max-width: 355px;
     font-size: 52px;
     font-weight: 600;
     line-height: 52px;
@@ -26,40 +28,18 @@
 }
 
 
-.hero-image {
-    background-image: url(../img/veg-1x/veg-phon.jpg);
-    width: 375px;
-    height: 372px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-}
-
-
 @media only screen and (min-width:768px) and (max-width:1279px) {
-    .hero-image {
-        background-image: url(../img/veg-1x/veg-tabl.jpg);
-        width: 768px;
-        height: 536px;
-    }
-
-    .hero-section {
-        max-width: 768px;
-    }
 
     .div-hero {
-        max-width: 768px;
-    }
-
-    .hero-image {
-        max-width: 768px;
+        background-image: url(../img/veg-1x/veg-tabl.jpg);
+        background-size: 768px;
+        background-position: bottom center;
+        background-repeat: no-repeat;
     }
 
     .text-box {
         max-width: 704px;
-        height: 312px;
-        margin: 120px 32px 52px 32px;
+        padding: 120px 0 588px 0;
     }
 
     .hero {
@@ -71,47 +51,50 @@
     }
 
     .text-hero {
-        max-width: 603px;
+        width: 603px;
     }
 }
 
-@media only screen and (min-width:1280px) {
-    .hero-image {
-        background-image: url(../img/veg-1x/veg-desc.jpg);
-        width: 640px;
-        height: 796px;
-    }
 
-    .hero-section {
-        max-width: 1280px;
-        padding: 0;
-    }
+@media only screen and (min-width:1280px) {
 
     .div-hero {
-        max-width: 1280px;
-        display: flex;
-        flex-direction: row;
+        background-image: url(../img/veg-1x/veg-desc.jpg);
+        background-size: 640px;
+        background-position: 640px;
+        background-repeat: no-repeat;
     }
 
     .text-box {
         max-width: 504px;
         height: 564px;
-        margin: 232px 36px 0 100px;
+        padding: 232px 0 0 0;
+        margin-right: 0;
+    }
+
+    .div-hero {
+        height: 796px;
     }
 
     .hero {
+        max-height: 304px;
+        max-width: 502px;
         font-size: 76px;
         font-weight: 600;
         line-height: 76px;
         letter-spacing: -0.01em;
         margin-bottom: 128px;
+
     }
 
     .text-hero {
         font-size: 16px;
         font-weight: 500;
         line-height: 20px;
-        max-width: 471px;
+        width: 472px;
+        height: 80px;
+        margin-bottom: 52px;
+        margin-right: 32px;
     }
 }
 
