@@ -233,7 +233,7 @@
   color: #fbfbfb;
 
   transition: 250ms ease-in;
-  transition-property: color background-color;
+  transition-property: color, background-color;
 }
 @media only screen and (min-width: 768px) {
   .send-button {
