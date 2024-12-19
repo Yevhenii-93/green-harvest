@@ -43,7 +43,7 @@
   background-color: #576f35;
 
   margin-left: auto;
-  padding-top: 296px;
+  padding-top: 52px;
   padding-bottom: 52px;
 
   transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,7 +76,6 @@
   background-color: transparent;
   border: none;
 }
-
 @media only screen and (min-width: 768px) {
   .btn-close-menu {
     top: 32px;
@@ -92,7 +91,6 @@
   stroke-width: 3px;
   stroke: #fbfbfb;
 }
-
 @media only screen and (min-width: 768px) {
   .icon-close-menu {
     width: 20px;
@@ -102,8 +100,8 @@
 
 .mobile-nav {
   margin-bottom: auto;
+  margin-top: auto;
 }
-
 .mobile-list {
   display: flex;
   flex-direction: column;
@@ -117,7 +115,6 @@
 
   text-align: center;
 }
-
 .mobile-item:active {
   background-color: #fbfbfb;
   color: #7a3145;
@@ -131,11 +128,9 @@
 .link-works {
   padding: 12px 18px;
 }
-
 .link-vegetables {
   padding: 12px 24px;
 }
-
 .link-reviews {
   padding: 12px 32px;
 }
@@ -155,7 +150,6 @@
 
   background-color: #7a3145;
 }
-
 .btn-menu:active {
   color: #7a3145;
   background-color: #fbfbfb;
