@@ -236,7 +236,7 @@
   color: #fbfbfb;
 
   transition: 250ms ease-in;
-  transition-property: color background-color;
+  transition-property: color, background-color;
 }
 .send-button:active {
   border: #858585;
