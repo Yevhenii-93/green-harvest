@@ -382,10 +382,11 @@
                 you !</p>
             <form class="user-form">
                 <label class="label visually-hidden" for="user-name">Name</label>
-                <input class="user" type="text" placeholder="Full Name" name="user-name" required>
+                <input class="user" id="user-name" type="text" placeholder="Full Name" name="user-name" required>
                 <label class="label visually-hidden" for="user-email">Email</label>
-                <input class="user" name="email" type="email" placeholder="Email" name="user-email"
+                <input class="user" id="user-email" name="email" type="email" placeholder="Email" name="user-email"
                     pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                    <label class="label visually-hidden" for="comment">Comment</label>
                 <textarea name="user-comment" id="user-comment" class="user-comment" placeholder="Comment"></textarea>
                 <button class="send-button">SEND</button>
             </form>
