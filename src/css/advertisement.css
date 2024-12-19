@@ -37,35 +37,53 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #141414;
-  position: absolute;
-  max-width: 335px;
+  /* position: absolute; */
+  /* max-width: 335px; */
 }
 
 @media only screen and (min-width: 768px) {
   .advertisement-text {
     font-size: 64px;
     line-height: 1;
-    max-width: 704px;
-    margin-top: 20px;
-    margin-bottom: 12px;
+    /* max-width: 704px; */
+    /* padding-top: 20px; */
+    padding-bottom: 12px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .advertisement-text {
     font-size: 76px;
-    margin-top: 4px;
-    margin-left: 16px;
-    margin-right: 10px;
-    max-width: 1054px;
+    /* padding-top: 4px; */
+    padding-left: 16px;
+    padding-right: 10px;
+    /* max-width: 1054px; */
   }
 }
 
 .advertisement-txt {
   color: #fbfbfb;
+  background-color: #576f35;
+  border-radius: 12px;
+  display: block;
 }
 
-.border {
+@media only screen and (min-width: 768px) {
+  .advertisement-txt {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .advertisement-txt {
+    padding-top: 0;
+    display: inline-block;
+    padding-left: 16px;
+    margin-left: -16px;
+  }
+}
+
+/* .border {
   width: 335px;
   height: 102px;
   background-color: #576f35;
@@ -84,7 +102,7 @@
     width: 808px;
     height: 84px;
   }
-}
+} */
 
 /* .advertisement {
   position: relative;
