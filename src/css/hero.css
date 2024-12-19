@@ -1,0 +1,95 @@
+.hero-section {
+    padding: 100px 0 412px;
+    width: 100%;
+    background-color: #576f35;
+    background-image: url(../img/veg-1x/veg-phon.jpg);
+    background-size: 375px, 372px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    max-width: 335px;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 52px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    .hero {
+        font-size: 43px;
+    }
+
+    .text-hero {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        background-image: url(../img/veg-1x//veg-tabl.jpg);
+        background-size: 768px, 536px;
+        background-position: bottom;
+        padding-top: 120px;
+        padding-bottom: 588px;
+    }
+
+    .hero {
+        max-width: 704px;
+        font-size: 76px;
+        font-weight: 600;
+        line-height: 76px;
+        margin-bottom: 24px;
+    }
+
+    .text-hero {
+        max-width: 603px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-section {
+        background-image: url(../img/veg-1x/veg-desc.jpg);
+        padding: 232px 0 52px;
+        background-position: left calc(50% + 320px) bottom 0;
+        background-size: 640px, 796px;
+        margin: auto;
+    }
+
+    .hero {
+        font-size: 76px;
+        font-weight: 600;
+        line-height: 76px;
+        letter-spacing: -0.01em;
+        max-width: 502px;
+        margin-bottom: 128px;
+    }
+
+    .text-hero {
+        max-width: 472px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    @media only screen and (max-width: 767px) {
+        .hero-section {
+            background-image: url(../img/veg-2x/veg-phon@2x.jpg);
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+        .hero-section {
+            background-image: url(../img/veg-2x/veg-tabl@2x.jpg);
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        .hero-section {
+            background-image: url(../img/veg-2x/veg-desc@2x.jpg);
+        }
+    }
+}

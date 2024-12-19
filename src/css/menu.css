@@ -1,0 +1,156 @@
+.menu {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(20, 20, 20, 0.4);
+
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, opacity, visibility;
+  transform: scale(0);
+}
+
+@media only screen and (min-width: 1280px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: scale(1);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: #576f35;
+
+  margin-left: auto;
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(100%);
+}
+
+.menu.is-open > .menu-container {
+  transform: translateX(0);
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    max-width: 351px;
+  }
+}
+
+.btn-close-menu {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 20px;
+  right: 20px;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: transparent;
+  border: none;
+}
+@media only screen and (min-width: 768px) {
+  .btn-close-menu {
+    top: 32px;
+    right: 32px;
+
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.icon-close-menu {
+  position: absolute;
+  stroke-width: 3px;
+  stroke: #fbfbfb;
+}
+@media only screen and (min-width: 768px) {
+  .icon-close-menu {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.mobile-nav {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.mobile-item {
+  border: 1px solid #fbfbfb;
+  border-radius: 12px;
+
+  text-align: center;
+}
+.mobile-item:active {
+  background-color: #fbfbfb;
+  color: #7a3145;
+}
+
+.mob-nav-link {
+  display: inline-block;
+  text-align: center;
+}
+
+.link-works {
+  padding: 12px 18px;
+}
+.link-vegetables {
+  padding: 12px 24px;
+}
+.link-reviews {
+  padding: 12px 32px;
+}
+
+.btn-menu {
+  border-radius: 30px;
+  border: transparent;
+  padding: 16px;
+  width: 175px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+
+  background-color: #7a3145;
+}
+.btn-menu:active {
+  color: #7a3145;
+  background-color: #fbfbfb;
+}
