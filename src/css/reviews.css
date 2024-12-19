@@ -2,6 +2,8 @@
 
 .section-reviews {
   padding: 80px 0;
+}
+.reviews-container {
   overflow: hidden;
 }
 
@@ -14,21 +16,25 @@
 }
 
 .title-reviews {
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 600;
   line-height: 52px;
   letter-spacing: -0.015em;
   text-align: left;
   color: #141414;
   text-transform: uppercase;
-  max-width: 335px;
+  max-width: 320px;
   margin-bottom: 20px;
 }
-
 .span-reviews {
   color: #576f35;
 }
 
+@media screen and (min-width: 375px) {
+  .title-reviews {
+    font-size: 48px;
+  }
+}
 .reviews-paragraf {
   text-align: left;
   color: #141414;
@@ -67,22 +73,23 @@
 /* #region slider*/
 
 .reviews-list {
-  width: 1005px;
-  height: 228px;
+  width: calc(100% * 3 + 16px);
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  gap: 8px;
+  justify-content: start;
 }
 
 .reviews-item {
-  width: 335px;
+  max-width: 335px;
   padding: 20px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 335px;
   overflow: hidden;
   animation: slide-left 15s linear infinite;
+  border-radius: 24px;
+  border: 1px solid rgba(212, 191, 196, 1);
 }
 
 @keyframes slide-left {
@@ -93,17 +100,17 @@
 
   20%,
   35% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 8px));
   }
 
   45%,
   60% {
-    transform: translateX(-200%);
+    transform: translateX(calc(-200% - 16px));
   }
 
   70%,
   85% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 8px));
   }
 
   95%,
@@ -116,13 +123,13 @@
 
 @media screen and (min-width: 768px) {
   .reviews-list {
-    width: 1068px;
+    max-width: 1068px;
     height: 248px;
     overflow: hidden;
     gap: 24px;
   }
   .reviews-item {
-    width: 340px;
+    max-width: 340px;
     padding: 20px;
   }
   @keyframes slide-left {
@@ -145,7 +152,7 @@
 
 @media screen and (min-width: 1280px) {
   .reviews-list {
-    width: 1080px;
+    max-width: 1080px;
   }
   .reviews-item {
     padding: 20px;
@@ -154,7 +161,7 @@
   }
 }
 .reviews-img {
-  width: 56px;
+  max-width: 56px;
   height: 56px;
   border-radius: 100%;
   margin-bottom: 24px;
@@ -172,7 +179,7 @@
 .reviews-text {
   text-align: center;
   color: #858585;
-  width: 288px;
+  max-width: 288px;
 }
 @media screen and (min-width: 768px) {
   .reviews-text {
