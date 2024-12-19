@@ -37,7 +37,7 @@
 @media screen and (min-width: 1280px) {
   .works-left {
     justify-content: flex-end;
-    width: 640px;
+    max-width: 640px;
     padding: 100px;
   }
 }
@@ -74,7 +74,7 @@
 }
 
 .container-right {
-  width: 375px;
+  max-width: 375px;
   padding: 0 20px;
 }
 
@@ -84,14 +84,14 @@
   }
 
   .container-right {
-    width: 768px;
+    max-width: 768px;
     padding: 0 164px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .work-right {
-    width: 640px;
+    max-width: 640px;
     padding: 100px 0;
   }
   .container-right {
