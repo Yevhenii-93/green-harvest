@@ -115,28 +115,25 @@
   background: #fbfbfb;
   border-radius: 30px;
   padding: 40px 20px;
-  width: 335px;
-  height: 552px;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .your-order-form {
     padding: 72px 100px;
-    width: 640px;
-    height: 632px;
+    max-width: 640px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .your-order-form {
     padding: 52px 48px;
-    width: 524px;
-    height: 592px;
+    max-width: 524px;
   }
 }
 .user {
   border: 1px solid #858585;
   border-radius: 30px;
   padding: 14px 16px;
-  width: 295px;
+  width: 100%;
   height: 48px;
   margin-bottom: 16px;
   background-color: transparent;
@@ -170,12 +167,15 @@
   border: 1px solid #858585;
   border-radius: 15px;
   padding: 16px;
-  width: 295px;
+  width: 100%;
   height: 92px;
   background-color: transparent;
   outline: transparent;
   margin-bottom: 20px;
   resize: none;
+}
+.user-comment:focus {
+  border-color: #7a3145;
 }
 @media only screen and (min-width: 768px) {
   .user-comment {
@@ -221,9 +221,12 @@
   border-radius: 30px;
   border: none;
   padding: 16px 129px;
-  width: 295px;
+  width: 100%;
   height: 52px;
   background: #7a3145;
+
+  display: flex;
+  justify-content: center;
 
   font-weight: 600;
   font-size: 18px;
@@ -234,6 +237,9 @@
 
   transition: 250ms ease-in;
   transition-property: color background-color;
+}
+.send-button:active {
+  border: #858585;
 }
 @media only screen and (min-width: 768px) {
   .send-button {
@@ -264,22 +270,20 @@
 .your-order-socials {
   border-radius: 30px;
   padding: 40px 20px;
-  width: 335px;
-  height: 456px;
+  width: 100%;
+
   background: #7a3145;
 }
 @media only screen and (min-width: 768px) {
   .your-order-socials {
     padding: 52px;
-    width: 640px;
-    height: 528px;
+    max-width: 640px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .your-order-socials {
     padding: 52px 48px;
-    width: 524px;
-    height: 592px;
+    max-width: 524px;
   }
 }
 /*social-text*/
@@ -352,4 +356,12 @@
 .your-order-img {
   overflow: hidden;
   border-radius: 15px;
+}
+.label {
+  visibility: hidden;
+}
+.user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
