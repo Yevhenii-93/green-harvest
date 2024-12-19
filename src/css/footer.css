@@ -1,4 +1,4 @@
-footer {
+.footer {
   background: #7a3145;
   padding: 40px 0;
 }
@@ -36,85 +36,105 @@ footer {
     padding: 0 100px;
     gap: 124px;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: baseline;
   }
 }
 
 .footer-menu-contact {
-  width: 335px;
+  max-width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
   .footer-menu-contact {
-    width: 704px;
+    max-width: 704px;
     display: flex;
+    gap: 212px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .footer-menu-contact {
-    width: 1080px;
-    display: flex;
+    max-width: 1080px;
+    gap: 250px;
   }
 }
 
 .footer-logo-text {
-  width: 335px;
+  max-width: 335px;
   margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .footer-logo-text {
-    width: 265px;
-    margin-right: 212px;
+    max-width: 265px;
     margin-bottom: 0;
+  }
+}
+
+.logo-link {
+  margin-bottom: 14px;
+  display: block;
+}
+
+@media only screen and (min-width: 768px),
+only screen and (min-width: 1280px) {
+  .logo-link {
+    margin-bottom: 24px;
   }
 }
 
 .logo-svg {
   fill: #fbfbfb;
-  margin-bottom: 14px;
-  width: 168px;
+  max-width: 168px;
   height: 16px;
+  display: block;
 }
 
-@media only screen and (min-width: 768px), only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px),
+only screen and (min-width: 1280px) {
   .logo-svg {
     margin-bottom: 24px;
-    width: 216px;
+    max-width: 216px;
     height: 20px;
   }
 }
 
 .logo-text-paragraph {
-  width: 335px;
+  max-width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
   .logo-text-paragraph {
-    width: 265px;
+    max-width: 265px;
   }
 }
 
 .footer-block-contacts {
   display: flex;
   flex-wrap: wrap;
+  max-width: 228px;
 }
 
-.footer-block {
-  width: 228px;
+@media only screen and (min-width: 1280px) {
+  .footer-block-contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 565px;
+  }
+}
+
+.block-list {
+  max-width: 228px;
   margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-block {
+  .block-list {
     margin-bottom: 64px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .footer-block {
+  .block-list {
     margin-right: 121px;
     margin-bottom: 0;
   }
@@ -124,14 +144,15 @@ footer {
   margin-bottom: 14px;
 }
 
-@media only screen and (min-width: 768px), only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px),
+only screen and (min-width: 1280px) {
   .block-item:not(:last-child) {
     margin-bottom: 24px;
   }
 }
 
 .block-text {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: "Inter Tight", sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
@@ -140,15 +161,16 @@ footer {
   color: #fbfbfb;
 }
 
-.footer-contacts {
-  width: 216px;
+.contacts-list {
+  max-width: 216px;
 }
 
 .contacts-item:not(:last-child) {
   margin-bottom: 14px;
 }
 
-@media only screen and (min-width: 768px), only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px),
+only screen and (min-width: 1280px) {
   .contacts-item:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -160,49 +182,36 @@ footer {
 
 @media only screen and (min-width: 320px) {
   .footer-privacy-policy {
-    width: 335px;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .footer-privacy-policy {
-    width: 704px;
+    width: 100%;
     display: flex;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .footer-privacy-policy {
-    width: 1080px;
+    width: 100%;
     display: flex;
-  }
-}
-
-.privacy-div {
-  width: 202px;
-  margin-bottom: 16px;
-}
-
-@media only screen and (min-width: 768px) {
-  .privacy-div {
-    width: 229px;
-    margin-right: 318px;
-    margin-bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .privacy-div {
-    width: 565px;
-    margin-right: 358px;
-    margin-bottom: 0;
   }
 }
 
 .privacy-list {
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .privacy-list {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -213,14 +222,4 @@ footer {
 
 .privacy-paragraph {
   color: #d4bfc4;
-}
-
-.privacy-mark {
-  width: 138px;
-}
-
-@media only screen and (min-width: 768px), only screen and (min-width: 1280px) {
-  .privacy-mark {
-    width: 157px;
-  }
 }
