@@ -36,8 +36,6 @@
         padding: 0 100px;
         gap: 124px;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: baseline;
     }
 }
 
@@ -47,15 +45,16 @@
 
 @media only screen and (min-width: 768px) {
     .footer-menu-contact {
-        width: 704px;
+        max-width: 704px;
         display: flex;
+        gap: 212px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .footer-menu-contact {
-        width: 1080px;
-        display: flex;
+        max-width: 1080px;
+        gap: 250px;
     }
 }
 
@@ -66,8 +65,7 @@
 
 @media only screen and (min-width: 768px) {
     .footer-logo-text {
-        width: 265px;
-        margin-right: 212px;
+        max-width: 265px;
         margin-bottom: 0;
     }
 }
@@ -86,7 +84,7 @@ only screen and (min-width: 1280px) {
 
 .logo-svg {
   fill: #fbfbfb;
-  width: 168px;
+  max-width: 168px;
   height: 16px;
   display: block;
 }
@@ -95,7 +93,7 @@ only screen and (min-width: 1280px) {
 only screen and (min-width: 1280px) {
     .logo-svg {
         margin-bottom: 24px;
-        width: 216px;
+        max-width: 216px;
         height: 20px;
     }
 }
@@ -106,17 +104,26 @@ only screen and (min-width: 1280px) {
 
 @media only screen and (min-width: 768px) {
     .logo-text-paragraph {
-        width: 265px;
+        max-width: 265px;
     }
 }
 
 .footer-block-contacts {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 228px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-block-contacts {
+      display: flex;
+      flex-wrap: nowrap;
+      max-width: 565px;
+  }
 }
 
 .block-list {
-  width: 228px;
+  max-width: 228px;
   margin-bottom: 40px;
 }
 
@@ -155,7 +162,7 @@ only screen and (min-width: 1280px) {
 }
 
 .contacts-list {
-  width: 216px;
+  max-width: 216px;
 }
 
 .contacts-item:not(:last-child) {
@@ -175,26 +182,25 @@ only screen and (min-width: 1280px) {
 
 @media only screen and (min-width: 320px) {
     .footer-privacy-policy {
-        width: 335px;
+        width: 100%;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .footer-privacy-policy {
-        width: 704px;
+        width: 100%;
         display: flex;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .footer-privacy-policy {
-        width: 1080px;
+        width: 100%;
         display: flex;
     }
 }
 
 .privacy-list {
-  width: 202px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -203,28 +209,17 @@ only screen and (min-width: 1280px) {
 
 @media only screen and (min-width: 768px) {
   .privacy-list {
-    width: 229px;
-    margin-right: 318px;
+    margin-right: auto;
     margin-bottom: 0;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .privacy-list {
-    width: 565px;
-    margin-right: 358px;
-    margin-bottom: 0;
     gap: 12px;
   }
 }
 
 .privacy-paragraph {
   color: #d4bfc4;
-  width: 138px;
-}
-
-@media only screen and (min-width: 768px), only screen and (min-width: 1280px) {
-  .privacy-paragraph {
-    width: 157px;
-  }
 }
