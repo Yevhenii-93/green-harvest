@@ -1,7 +1,9 @@
-function pauseAnimation() {
-  document.querySelector('.slider').classList.add('paused');
-}
+const slider = document.querySelector('.slider');
 
-function resumeAnimation() {
-  document.querySelector('.slider').classList.remove('paused');
-}
+slider.addEventListener('mousemove', () => {
+  slider.classList.add('paused');
+});
+
+slider.addEventListener('mouseleave', () => {
+  slider.classList.remove('paused');
+});
