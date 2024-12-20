@@ -73,7 +73,7 @@
 /* #region slider*/
 
 .reviews-list {
-  width: calc(100% * 3 + 16px);
+  width: 100%;
   overflow: hidden;
   display: flex;
   gap: 8px;
@@ -81,15 +81,43 @@
 }
 
 .reviews-item {
-  max-width: 335px;
+  width: 100%;
+  flex: 0 0 auto;
   padding: 20px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  animation: slide-left 30s linear infinite;
+  overflow: visible;
   border-radius: 24px;
   border: 1px solid rgba(212, 191, 196, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slide-left 30s linear infinite;
+}
+
+.slider.paused .reviews-item {
+  animation-play-state: paused;
+}
+
+.reviews-item:hover .reviews-img,
+.reviews-item:focus .reviews-img,
+.reviews-item:active .reviews-img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.reviews-item:hover,
+.reviews-item:focus,
+.reviews-item:active {
+  transform: scale(1.05) translateY(-10px);
+  transition: transform 0.3s ease;
+  border: 0 solid #7a3145;
+  box-shadow: 0 4px 20px rgba(0, 0, 1, 0.3);
+}
+
+@media screen and (min-width: 375px) {
+  .reviews-item {
+    width: 335px;
+  }
 }
 
 @keyframes slide-left {
@@ -181,6 +209,15 @@
   color: #858585;
   max-width: 288px;
 }
+
+.reviews-text:hover,
+.reviews-text:focus,
+.reviews-text:active {
+  font-weight: 600;
+  color: #7a3145;
+  transition: transform 0.3s ease;
+}
+
 @media screen and (min-width: 768px) {
   .reviews-text {
     font-size: 16px;
