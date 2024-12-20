@@ -229,8 +229,6 @@
   background-color: #7a3145;
   border: 5px solid #d4bfc4;
   border-radius: 50%;
-  transition: transform 4c;
-  transform-origin: center;
 }
 
 .list-item:hover::before,
