@@ -72,6 +72,10 @@
 
 /* #region slider*/
 
+.reviews-list-wrapper {
+  overflow: hidden;
+}
+
 .reviews-list {
   width: 100%;
   overflow: hidden;

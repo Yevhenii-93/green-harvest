@@ -1,109 +1,110 @@
-<section class="your-order container" id="your-order">
-  <h2 class="your-order-title">
-    Fresh <span class="harvest">Harvest</span> Box has got you covered
-  </h2>
-  <p class="your-order-text">
-    Our boxes are packed with delicious, nutritious vegetables, perfect for
-    anyone looking to eat healthier or support local farmers. Order your box
-    today and start enjoying the best that nature has to offer!
-  </p>
-  <div class="order-wrapper">
-    <div class="your-order-form">
-      <p class="form-text">
-        Ordering <span class="from-us">from us</span> is quick and easy! Fill
-        out <span class="the-form">the form</span> below and we will contact you
-        !
-      </p>
-      <form class="user-form">
-        <label class="label visually-hidden" for="user-name">Name</label>
-        <input
-          class="user"
-          id="user-name"
-          type="text"
-          placeholder="Full Name"
-          name="user-name"
-          required
-        />
-        <label class="label visually-hidden" for="user-email">Email</label>
-        <input
-          class="user"
-          id="user-email"
-          name="email"
-          type="email"
-          placeholder="Email"
-          name="user-email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          required
-        />
-        <label class="label visually-hidden" for="comment">Comment</label>
-        <textarea
-          name="user-comment"
-          id="comment"
-          class="user-comment"
-          placeholder="Comment"
-        ></textarea>
-        <button class="send-button">SEND</button>
-      </form>
-    </div>
-    <div class="your-order-socials">
-      <picture>
-        <!--Destkop -->
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            img/your-order/pic_desk@1x.jpg 1x,
-            img/your-order/pic_desk@2x.jpg 2x
-          "
-        />
-        <!--tablet -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            img/your-order/tablet_tab@1x.jpg    1x,
-            img/your-order/pictablet_tab@2x.jpg 2x
-          "
-        />
-        <!--mobile -->
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            img/your-order/mobile_mob@1x.jpg 1x,
-            img/your-order/mobile_mob@2x.jpg 2x
-          "
-        />
-        <img
-          class="your-order-img"
-          src="img/your-order/mobile_mob@1x.jpg"
-          alt="How it works?"
-        />
-      </picture>
-      <p class="social-text">Follow us on our social networks:</p>
-      <ul class="your-order-list">
-        <li class="your-order-item">
-          <a
-            class="your-order-link"
-            target="_blank"
-            href="https://www.instagram.com/goitclub/"
-            >Instagram</a
-          >
-        </li>
-        <li class="your-order-item">
-          <a
-            class="your-order-link"
-            target="_blank"
-            href="https://www.facebook.com/goITclub/"
-            >Facebook</a
-          >
-        </li>
-        <li class="your-order-item">
-          <a
-            class="your-order-link"
-            target="_blank"
-            href="https://www.youtube.com/c/GoIT"
-            >Youtube</a
-          >
-        </li>
-      </ul>
+<section class="your-order" id="your-order">
+  <div class="container">
+    <h2 class="your-order-title">
+      Fresh <span class="harvest">Harvest</span> Box has got you covered
+    </h2>
+    <p class="your-order-text">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-wrapper">
+      <div class="your-order-form">
+        <p class="form-text">
+          Ordering <span class="from-us">from us</span> is quick and easy! Fill
+          out <span class="the-form">the form</span> below and we will contact
+          you !
+        </p>
+        <form class="user-form">
+          <label class="label visually-hidden" for="user-name">Name</label>
+          <input
+            class="user"
+            id="user-name"
+            type="text"
+            placeholder="Full Name"
+            name="user-name"
+            required
+          />
+          <label class="label visually-hidden" for="user-email">Email</label>
+          <input
+            class="user"
+            id="user-email"
+            type="email"
+            placeholder="Email"
+            name="user-email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+          <label class="label visually-hidden" for="comment">Comment</label>
+          <textarea
+            name="user-comment"
+            id="comment"
+            class="user-comment"
+            placeholder="Comment"
+          ></textarea>
+          <button class="send-button">SEND</button>
+        </form>
+      </div>
+      <div class="your-order-socials">
+        <picture>
+          <!--Destkop -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              img/your-order/pic_desk@1x.jpg 1x,
+              img/your-order/pic_desk@2x.jpg 2x
+            "
+          />
+          <!--tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              img/your-order/tablet_tab@1x.jpg    1x,
+              img/your-order/pictablet_tab@2x.jpg 2x
+            "
+          />
+          <!--mobile -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              img/your-order/mobile_mob@1x.jpg 1x,
+              img/your-order/mobile_mob@2x.jpg 2x
+            "
+          />
+          <img
+            class="your-order-img"
+            src="img/your-order/mobile_mob@1x.jpg"
+            alt="How it works?"
+          />
+        </picture>
+        <p class="social-text">Follow us on our social networks:</p>
+        <ul class="your-order-list">
+          <li class="your-order-item">
+            <a
+              class="your-order-link"
+              target="_blank"
+              href="https://www.instagram.com/goitclub/"
+              >Instagram</a
+            >
+          </li>
+          <li class="your-order-item">
+            <a
+              class="your-order-link"
+              target="_blank"
+              href="https://www.facebook.com/goITclub/"
+              >Facebook</a
+            >
+          </li>
+          <li class="your-order-item">
+            <a
+              class="your-order-link"
+              target="_blank"
+              href="https://www.youtube.com/c/GoIT"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
