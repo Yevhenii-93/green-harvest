@@ -109,15 +109,6 @@
   transition: transform 0.3s ease;
 }
 
-.reviews-item:hover,
-.reviews-item:focus,
-.reviews-item:active {
-  transform: scale(1.05) translateY(-10px);
-  transition: transform 0.3s ease;
-  border: 0 solid #7a3145;
-  box-shadow: 0 4px 20px rgba(0, 0, 1, 0.3);
-}
-
 @media screen and (min-width: 375px) {
   .reviews-item {
     width: 335px;
